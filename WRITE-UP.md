@@ -1,6 +1,4 @@
-# Self Driving Nanodegree Model Predictive Controller
-
----
+# Model Predictive Controller
 
 The goal of this project is to implement model predictive control to drive the vehicle around the track as close as reference trajectory with additional latency to simulate real-world scenario.
 
@@ -45,9 +43,9 @@ With the value of N increased, computation gets increased for each of model elem
 
 **Polynomial Fitting and MPC Preprocessing**
 
-The waypoints shown in yellow trajectory are first transformed into vehicle coordinate system first. The waypoints are obtained by shifting the origin to the current position of the vehicle and then fitted in third order polynomial. This transformation can be found in main.cpp (107 - 114); 
+The waypoints shown in yellow trajectory are first transformed into vehicle coordinate system first. The waypoints are obtained by shifting the origin to the current position of the vehicle and then fitted in third order polynomial. This transformation can be found in main.cpp (107 - 114).
 
-    `state << 0, 0, 0, v, cte, epsi;`
+    state << 0, 0, 0, v, cte, epsi;
 
 The initial position of the car and heading direction are always zero in vehicle coordinate system. Hence, the state of the car in this system is as shown above initially.
 
