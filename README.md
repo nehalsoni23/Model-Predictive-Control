@@ -38,4 +38,4 @@ Self-Driving Car Engineer Nanodegree Program
 3. Compile: `cmake .. && make`
 4. Run it: `./mpc`.
 
-You can find detailed write up for the project [here] (./WRITE-UP.md).
+You can find detailed write up for the project [here](./WRITE-UP.md).
